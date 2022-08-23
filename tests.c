@@ -3,6 +3,8 @@
 
 int ft_atoi(const char *str);
 
+int	ft_strlen(char *s);
+
 void test_atoi(char *str)
 {
 	int expected;
@@ -20,5 +22,11 @@ void test_atoi(char *str)
 int main()
 {
 	printf("Iniciando bateria de testes\n");
-	test_atoi("1234567890");
+	test_atoi("4");
+	test_atoi("42");
+	test_atoi("422");
+	test_atoi("4228724");
+	test_atoi("873648c");
+	test_atoi("873648c");
+	test_atoi("	 873648");
 }
